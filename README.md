@@ -278,7 +278,7 @@ var program = jex.Compile(@"
 
 ## Related Packages
 
-This package is part of the Khaos suite of libraries:
+This package is part of the KoreForge suite of libraries:
 
 - `KoreForge.Pipeline` - Chainable middleware pipeline for processing
 - `KoreForge.Flow` - State-machine workflow orchestration

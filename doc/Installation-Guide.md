@@ -40,7 +40,7 @@ The easiest way to install the extension is from a pre-built `.vsix` file.
 #### Option 1: Command Line
 
 ```powershell
-code --install-extension path\to\khaos-jex.vsix
+code --install-extension path\to\koreforge-jex.vsix
 ```
 
 #### Option 2: VS Code UI
@@ -48,7 +48,7 @@ code --install-extension path\to\khaos-jex.vsix
 1. Open VS Code
 2. Press `Ctrl+Shift+P` to open the Command Palette
 3. Type "Extensions: Install from VSIX..."
-4. Navigate to and select the `khaos-jex.vsix` file
+4. Navigate to and select the `koreforge-jex.vsix` file
 5. Reload VS Code when prompted
 
 ### Install from Source
@@ -57,7 +57,7 @@ If you want to build and install from source:
 
 ```powershell
 # Clone or navigate to the repository
-cd C:\My\Khaos\KoreForge.Jex
+cd C:\My\KoreForge\KoreForge.Jex
 
 # Build everything
 .\scripts\build.ps1
@@ -66,7 +66,7 @@ cd C:\My\Khaos\KoreForge.Jex
 .\scripts\pack.ps1
 
 # Install the extension
-code --install-extension .\artifacts\khaos-jex.vsix
+code --install-extension .\artifacts\koreforge-jex.vsix
 ```
 
 ---
@@ -212,13 +212,13 @@ Or download from: https://dotnet.microsoft.com/download/dotnet/10.0
 ### Via Command Line
 
 ```powershell
-code --uninstall-extension KoreForge.khaos-jex
+code --uninstall-extension KoreForge.jex
 ```
 
 ### Via VS Code UI
 
 1. Open Extensions view (`Ctrl+Shift+X`)
-2. Find "Khaos JEX" in installed extensions
+2. Find "KoreForge JEX" in installed extensions
 3. Click the gear icon and select "Uninstall"
 4. Reload VS Code
 
@@ -228,7 +228,7 @@ To remove all extension data:
 
 ```powershell
 # Windows
-Remove-Item -Recurse "$env:USERPROFILE\.vscode\extensions\KoreForge.khaos-jex-*"
+Remove-Item -Recurse "$env:USERPROFILE\.vscode\extensions\KoreForge.koreforge-jex-*"
 
 # Also remove settings if desired
 # Edit settings.json and remove all "jex.*" entries

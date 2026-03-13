@@ -112,7 +112,7 @@ c:\My\KoreForge\
 │
 └── artifacts/                        # Build outputs
     └── vsix/
-        └── khaos-jex-x.x.x.vsix
+        └── koreforge-jex-x.x.x.vsix
 ```
 
 ---
@@ -170,38 +170,38 @@ cd ..
 
 ```powershell
 # Build core JEX library
-cd c:\My\Khaos\KoreForge.Jex
+cd c:\My\KoreForge\KoreForge.Jex
 .\scripts\build.ps1
 
 # Build Language Server
-cd c:\My\Khaos\KoreForge.Jex.LanguageServer
+cd c:\My\KoreForge\KoreForge.Jex.LanguageServer
 .\scripts\build.ps1
 
 # Build VS Code Extension (includes Language Server)
-cd c:\My\Khaos\KoreForge.Jex.VSCode
+cd c:\My\KoreForge\KoreForge.Jex.VSCode
 .\scripts\build.ps1
 ```
 
 ### Build Language Server Only
 
 ```powershell
-cd c:\My\Khaos\KoreForge.Jex.LanguageServer
+cd c:\My\KoreForge\KoreForge.Jex.LanguageServer
 dotnet build src/KoreForge.Jex.LanguageServer
 ```
 
 ### Build VS Code Extension Only
 
 ```powershell
-cd c:\My\Khaos\KoreForge.Jex.VSCode
+cd c:\My\KoreForge\KoreForge.Jex.VSCode
 npm run compile
 ```
 
 ### Create VSIX Package
 
 ```powershell
-cd c:\My\Khaos\KoreForge.Jex.VSCode
+cd c:\My\KoreForge\KoreForge.Jex.VSCode
 .\scripts\pack.ps1
-# Output: c:\My\Khaos\artifacts\vsix\khaos-jex-x.x.x.vsix
+# Output: c:\My\KoreForge\artifacts\vsix\koreforge-jex-x.x.x.vsix
 ```
 
 ---
@@ -212,18 +212,18 @@ cd c:\My\Khaos\KoreForge.Jex.VSCode
 
 ```powershell
 # Test core JEX library
-cd c:\My\Khaos\KoreForge.Jex
+cd c:\My\KoreForge\KoreForge.Jex
 .\scripts\test.ps1
 
 # Test Language Server
-cd c:\My\Khaos\KoreForge.Jex.LanguageServer
+cd c:\My\KoreForge\KoreForge.Jex.LanguageServer
 .\scripts\test.ps1
 ```
 
 ### Language Server Tests Only
 
 ```powershell
-cd c:\My\Khaos\KoreForge.Jex.LanguageServer
+cd c:\My\KoreForge\KoreForge.Jex.LanguageServer
 dotnet test tests/KoreForge.Jex.LanguageServer.Tests
 ```
 
@@ -614,7 +614,7 @@ refactor: extract common completion logic
 vsce ls --tree
 
 # Test install
-code --install-extension .\artifacts\khaos-jex.vsix
+code --install-extension .\artifacts\koreforge-jex.vsix
 ```
 
 ### Publish (if publishing to marketplace)

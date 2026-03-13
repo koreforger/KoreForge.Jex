@@ -24,7 +24,7 @@ Welcome to the documentation for the JEX VS Code Extension. This extension provi
 ### 1. Install the Extension
 
 ```powershell
-code --install-extension path/to/khaos-jex.vsix
+code --install-extension path/to/koreforge-jex.vsix
 ```
 
 ### 2. Create a JEX File
