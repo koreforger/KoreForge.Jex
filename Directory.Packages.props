@@ -1,0 +1,31 @@
+<Project>
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <!-- Build tooling -->
+  <ItemGroup>
+    <PackageVersion Include="MinVer" Version="6.0.0" />
+  </ItemGroup>
+
+  <!-- Production packages -->
+  <ItemGroup>
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <!-- Benchmark packages -->
+  <ItemGroup>
+    <PackageVersion Include="BenchmarkDotNet" Version="0.15.8" />
+  </ItemGroup>
+
+  <!-- Test packages -->
+  <ItemGroup>
+    <PackageVersion Include="coverlet.collector"        Version="6.0.4"   />
+    <PackageVersion Include="coverlet.msbuild"          Version="6.0.4"   />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk"    Version="17.14.1" />
+    <PackageVersion Include="xunit"                     Version="2.9.3"   />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.4"   />
+  </ItemGroup>
+
+</Project>
