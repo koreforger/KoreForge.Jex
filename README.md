@@ -216,7 +216,7 @@ Benchmark results on .NET 10.0.1 (13th Gen Intel Core i7-13650HX, Windows 11):
 Run benchmarks yourself:
 ```bash
 cd KoreForge.Jex
-.\bin\build-benchmark.ps1
+.\scr\build-benchmark.ps1
 ```
 
 ## Error Handling

@@ -82,7 +82,7 @@ c:\My\KoreForge\
 │   ├── tst/
 │   │   ├── KF.Jex.Tests/
 │   │   └── KF.Jex.Benchmarks/
-│   ├── bin/                          # build-*.ps1, git-*.ps1
+│   ├── scr/                          # build-*.ps1, git-*.ps1
 │   └── doc/
 │
 ├── KoreForge.Jex.LanguageServer/         # Language Server (separate project)
