@@ -29,10 +29,10 @@ jobs:
         run: dotnet tool restore
 
       - name: Build
-        run: dotnet build KoreForge.Jex.sln -c Release
+        run: dotnet build KoreForge.Jex.slnx -c Release
 
       - name: Test
-        run: dotnet test KoreForge.Jex.sln -c Release --no-build
+        run: dotnet test KoreForge.Jex.slnx -c Release --no-build
 
       - name: Pack
         run: dotnet pack src/KF.Jex/KF.Jex.csproj -c Release --no-build -o artifacts/
