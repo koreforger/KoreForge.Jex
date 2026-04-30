@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/KF.Jex/KF.Jex.csproj" />
+  </Folder>
+  <Folder Name="/tst/">
+    <Project Path="tst/KF.Jex.Benchmarks/KF.Jex.Benchmarks.csproj" />
+    <Project Path="tst/KF.Jex.Tests/KF.Jex.Tests.csproj" />
+  </Folder>
+</Solution>
