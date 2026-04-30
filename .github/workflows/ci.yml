@@ -26,11 +26,11 @@ jobs:
         run: dotnet tool restore
 
       - name: Build
-        run: dotnet build KoreForge.Jex.sln -c Debug
+        run: dotnet build KoreForge.Jex.slnx -c Debug
 
       - name: Test with coverage
         run: |
-          dotnet test KoreForge.Jex.sln -c Debug --no-build \
+          dotnet test KoreForge.Jex.slnx -c Debug --no-build \
             --logger "html;LogFileName=TestResults.html" \
             --results-directory out/TestResults
 
