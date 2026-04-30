@@ -70,7 +70,7 @@ Create a file with `.jex` extension and start writing:
 KoreForge.Jex/
 ├── src/KoreForge.Jex.LanguageServer/   # C# Language Server
 ├── tests/KoreForge.Jex.LanguageServer.Tests/
-├── KoreForge.Jex.VSCode/               # VS Code Extension
+├── KF.Jex.VSCode/               # VS Code Extension
 │   ├── src/                        # TypeScript source
 │   ├── syntaxes/                   # TextMate grammar
 │   ├── snippets/                   # Code snippets

@@ -111,7 +111,7 @@ Example manifest:
 
 ```json
 {
-    "$schema": "https://raw.githubusercontent.com/koreforger/KoreForge.Jex/main/KoreForge.Jex.VSCode/schemas/jex.functions.schema.json",
+    "$schema": "https://raw.githubusercontent.com/koreforger/KoreForge.Jex/main/KF.Jex.VSCode/schemas/jex.functions.schema.json",
     "functions": [
         {
             "name": "myCustomFunction",
@@ -228,7 +228,7 @@ To remove all extension data:
 
 ```powershell
 # Windows
-Remove-Item -Recurse "$env:USERPROFILE\.vscode\extensions\KoreForge.koreforge-jex-*"
+Remove-Item -Recurse "$env:USERPROFILE\.vscode\extensions\koreforger.koreforge-jex-*"
 
 # Also remove settings if desired
 # Edit settings.json and remove all "jex.*" entries

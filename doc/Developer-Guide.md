@@ -95,7 +95,7 @@ c:\My\KoreForge\
 │   │   └── KoreForge.Jex.LanguageServer.Tests/
 │   └── scripts/                      # build.ps1, test.ps1, clean.ps1
 │
-├── KoreForge.Jex.VSCode/                 # VS Code Extension (separate project)
+├── KF.Jex.VSCode/                 # VS Code Extension (separate project)
 │   ├── src/
 │   │   ├── extension.ts              # Extension entry point
 │   │   └── test/                     # Extension tests
@@ -144,7 +144,7 @@ cd KoreForge.Jex
 dotnet restore
 
 # Install VS Code extension dependencies
-cd KoreForge.Jex.VSCode
+cd KF.Jex.VSCode
 npm install
 cd ..
 
@@ -155,11 +155,11 @@ cd ..
 ### IDE Setup
 
 **For C# (Language Server)**:
-- Open `KoreForge.Jex.sln` in Visual Studio 2022 or VS Code with C# Dev Kit
+- Open `KoreForge.Jex.slnx` in Visual Studio 2022 or VS Code with C# Dev Kit
 - Ensure .NET 10 SDK is selected
 
 **For TypeScript (VS Code Extension)**:
-- Open `KoreForge.Jex.VSCode` folder in VS Code
+- Open `KF.Jex.VSCode` folder in VS Code
 - Install recommended extensions when prompted
 
 ---
@@ -178,7 +178,7 @@ cd c:\My\KoreForge\KoreForge.Jex.LanguageServer
 .\scripts\build.ps1
 
 # Build VS Code Extension (includes Language Server)
-cd c:\My\KoreForge\KoreForge.Jex.VSCode
+cd c:\My\KoreForge\KF.Jex.VSCode
 .\scripts\build.ps1
 ```
 
@@ -192,14 +192,14 @@ dotnet build src/KoreForge.Jex.LanguageServer
 ### Build VS Code Extension Only
 
 ```powershell
-cd c:\My\KoreForge\KoreForge.Jex.VSCode
+cd c:\My\KoreForge\KF.Jex.VSCode
 npm run compile
 ```
 
 ### Create VSIX Package
 
 ```powershell
-cd c:\My\KoreForge\KoreForge.Jex.VSCode
+cd c:\My\KoreForge\KF.Jex.VSCode
 .\scripts\pack.ps1
 # Output: c:\My\KoreForge\artifacts\vsix\koreforge-jex-x.x.x.vsix
 ```
@@ -244,7 +244,7 @@ The project maintains a **60% minimum code coverage** threshold for the Language
 ### VS Code Extension Tests
 
 ```powershell
-cd KoreForge.Jex.VSCode
+cd KF.Jex.VSCode
 npm test
 ```
 
@@ -284,7 +284,7 @@ System.Diagnostics.Debugger.Launch();
 
 ### Debugging the VS Code Extension
 
-1. Open `KoreForge.Jex.VSCode` folder in VS Code
+1. Open `KF.Jex.VSCode` folder in VS Code
 2. Press `F5` to launch Extension Development Host
 3. Set breakpoints in `extension.ts`
 4. The debugger will stop at breakpoints
@@ -527,7 +527,7 @@ options.WithHandler<SignatureHelpHandler>();
 
 ### Adding a New Snippet
 
-Edit `KoreForge.Jex.VSCode/snippets/jex.json`:
+Edit `KF.Jex.VSCode/snippets/jex.json`:
 
 ```json
 {
@@ -544,7 +544,7 @@ Edit `KoreForge.Jex.VSCode/snippets/jex.json`:
 
 ### Adding Grammar Support
 
-Edit `KoreForge.Jex.VSCode/syntaxes/jex.tmLanguage.json`:
+Edit `KF.Jex.VSCode/syntaxes/jex.tmLanguage.json`:
 
 ```json
 {

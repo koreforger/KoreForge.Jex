@@ -6,8 +6,8 @@ param(
 
 Push-Location (Resolve-Path "$PSScriptRoot\..")
 try {
-    dotnet build KoreForge.Jex.sln --force -c $Configuration
-    dotnet test  KoreForge.Jex.sln -c $Configuration --no-build `
+    dotnet build KoreForge.Jex.slnx --force -c $Configuration
+    dotnet test  KoreForge.Jex.slnx -c $Configuration --no-build `
         --logger "html;LogFileName=TestResults.html" `
         --results-directory out/TestResults `
         --collect:"XPlat Code Coverage" `
