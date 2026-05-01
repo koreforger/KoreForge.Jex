@@ -60,10 +60,10 @@ If you want to build and install from source:
 cd C:\My\KoreForge\KoreForge.Jex
 
 # Build everything
-.\scripts\build.ps1
+.\scr\build-rebuild.ps1
 
 # Create the VSIX package
-.\scripts\pack.ps1
+.\scr\build-pack.ps1
 
 # Install the extension
 code --install-extension .\artifacts\koreforge-jex.vsix
@@ -240,3 +240,5 @@ Remove-Item -Recurse "$env:USERPROFILE\.vscode\extensions\koreforger.koreforge-j
 
 - Read the [User Guide](User-Guide.md) to learn how to use JEX effectively
 - Check the [Developer Guide](Developer-Guide.md) if you want to contribute
+
+

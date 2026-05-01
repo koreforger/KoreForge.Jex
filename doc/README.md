@@ -75,7 +75,7 @@ KoreForge.Jex/
 │   ├── syntaxes/                   # TextMate grammar
 │   ├── snippets/                   # Code snippets
 │   └── schemas/                    # JSON schemas
-├── scripts/                        # Build scripts
+├── scr/                            # Build scripts
 ├── docs/                           # Documentation
 └── artifacts/                      # Build outputs
 ```
@@ -84,16 +84,16 @@ KoreForge.Jex/
 
 ```powershell
 # Build everything
-.\scripts\build.ps1
+.\scr\build-rebuild.ps1
 
 # Run tests
-.\scripts\test.ps1
+.\scr\build-test.ps1
 
 # Create VSIX package
-.\scripts\pack.ps1
+.\scr\build-pack.ps1
 
 # Clean artifacts
-.\scripts\clean.ps1
+.\scr\build-clean.ps1
 ```
 
 ## Requirements
@@ -113,3 +113,6 @@ See the [Developer Guide](Developer-Guide.md) for information on:
 ## License
 
 MIT License - See [LICENSE.md](../LICENSE.md)
+
+
+

@@ -93,7 +93,7 @@ c:\My\KoreForge\
 │   │       └── Services/             # DocumentManager, etc.
 │   ├── tests/
 │   │   └── KoreForge.Jex.LanguageServer.Tests/
-│   └── scripts/                      # build.ps1, test.ps1, clean.ps1
+│   └── scr/                          # build-rebuild.ps1, build-test.ps1, build-clean.ps1
 │
 ├── KF.Jex.VSCode/                 # VS Code Extension (separate project)
 │   ├── src/
@@ -106,7 +106,7 @@ c:\My\KoreForge\
 │   ├── schemas/                      # JSON schemas
 │   ├── icons/                        # Extension icons
 │   ├── examples/                     # Sample files
-│   ├── scripts/                      # build.ps1, pack.ps1, clean.ps1
+│   ├── scr/                          # build-rebuild.ps1, build-pack.ps1, build-clean.ps1
 │   ├── server/                       # Published Language Server (created by build)
 │   └── package.json                  # Extension manifest
 │
@@ -149,7 +149,7 @@ npm install
 cd ..
 
 # Build everything
-.\scripts\build.ps1
+.\scr\build-rebuild.ps1
 ```
 
 ### IDE Setup
@@ -171,15 +171,15 @@ cd ..
 ```powershell
 # Build core JEX library
 cd c:\My\KoreForge\KoreForge.Jex
-.\scripts\build.ps1
+.\scr\build-rebuild.ps1
 
 # Build Language Server
 cd c:\My\KoreForge\KoreForge.Jex.LanguageServer
-.\scripts\build.ps1
+.\scr\build-rebuild.ps1
 
 # Build VS Code Extension (includes Language Server)
 cd c:\My\KoreForge\KF.Jex.VSCode
-.\scripts\build.ps1
+.\scr\build-rebuild.ps1
 ```
 
 ### Build Language Server Only
@@ -200,7 +200,7 @@ npm run compile
 
 ```powershell
 cd c:\My\KoreForge\KF.Jex.VSCode
-.\scripts\pack.ps1
+.\scr\build-pack.ps1
 # Output: c:\My\KoreForge\artifacts\vsix\koreforge-jex-x.x.x.vsix
 ```
 
@@ -213,11 +213,11 @@ cd c:\My\KoreForge\KF.Jex.VSCode
 ```powershell
 # Test core JEX library
 cd c:\My\KoreForge\KoreForge.Jex
-.\scripts\test.ps1
+.\scr\build-test.ps1
 
 # Test Language Server
 cd c:\My\KoreForge\KoreForge.Jex.LanguageServer
-.\scripts\test.ps1
+.\scr\build-test.ps1
 ```
 
 ### Language Server Tests Only
@@ -601,10 +601,10 @@ refactor: extract common completion logic
 ### Build Release
 
 ```powershell
-.\scripts\clean.ps1
-.\scripts\build.ps1 -Configuration Release
-.\scripts\test.ps1
-.\scripts\pack.ps1
+.\scr\build-clean.ps1
+.\scr\build-rebuild.ps1 -Configuration Release
+.\scr\build-test.ps1
+.\scr\build-pack.ps1
 ```
 
 ### Verify Package
@@ -632,3 +632,6 @@ vsce publish
 - [Language Server Protocol Specification](https://microsoft.github.io/language-server-protocol/)
 - [VS Code Extension API](https://code.visualstudio.com/api)
 - [OmniSharp Language Server](https://github.com/OmniSharp/csharp-language-server-protocol)
+
+
+
