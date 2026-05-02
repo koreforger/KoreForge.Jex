@@ -35,7 +35,7 @@ jobs:
         run: dotnet test KoreForge.Jex.slnx -c Release --no-build
 
       - name: Pack
-        run: dotnet pack src/KF.Jex/KF.Jex.csproj -c Release --no-build -o artifacts/
+        run: dotnet pack src/KoreForge.Jex/KoreForge.Jex.csproj -c Release --no-build -o artifacts/
 
       - name: Push to NuGet.org
         run: |

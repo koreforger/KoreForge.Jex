@@ -111,7 +111,7 @@ Example manifest:
 
 ```json
 {
-    "$schema": "https://raw.githubusercontent.com/koreforger/KoreForge.Jex/main/KF.Jex.VSCode/schemas/jex.functions.schema.json",
+    "$schema": "https://raw.githubusercontent.com/koreforger/KoreForge.Jex/main/KoreForge.Jex.VSCode/schemas/jex.functions.schema.json",
     "functions": [
         {
             "name": "myCustomFunction",

@@ -101,7 +101,7 @@ public readonly struct JexValue : IEquatable<JexValue>
         _ => default
     };
 
-    public JToken? AsJson() => Kind switch
+    public JToken AsJson() => Kind switch
     {
         JexValueKind.Null => JValue.CreateNull(),
         JexValueKind.Boolean => new JValue((bool)_value!),
