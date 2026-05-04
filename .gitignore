@@ -52,3 +52,10 @@ out/
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+
+# Prevent accidental commits of NuGet-extracted package content
+/doc/KoreForge.*/
+/doc/Event.*/
+/docs/KoreForge.*/
+/docs/Event.*/
